@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Virtual Try-On{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Virtual Try-On</div>
+        <ul class="nav-links">
+            <li><a href="{{ url_for('home') }}" class="home-link">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="{{ url_for('tryon') }}" class="tryon-link">Try-On</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="{{ url_for('login') }}">Login</a></li>
+        </ul>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+
+</body>
+</html>

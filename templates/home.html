@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Try-On | Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Virtual Try-On</div>
+        <ul class="nav-links">
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="{{ url_for('tryon') }}">Try-On</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="{{ url_for('login') }}">Login</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Try Clothes Online with AI</h1>
+        <p>Upload your photo or use a 3D avatar to try before you buy.</p>
+        <a href="{{ url_for('tryon') }}" class="hero-btn">Try Now</a>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories">
+        <h2>Shop by Category</h2>
+        <div class="category-container">
+            <div class="category-card" onclick="window.location.href='{{ url_for('mens') }}'">
+                <img src="{{ url_for('static', filename='images/men.jpg') }}" alt="Men">
+                <h3>Men</h3>
+            </div>
+            <div class="category-card" onclick="window.location.href='{{ url_for('womens') }}'">
+                <img src="{{ url_for('static', filename='images/women.jpg') }}" alt="Women">
+                <h3>Women</h3>
+            </div>
+            <div class="category-card" onclick="window.location.href='{{ url_for('kids') }}'">
+                <img src="{{ url_for('static', filename='images/kids.jpg') }}" alt="Kids">
+                <h3>Kids</h3>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Trending Products -->
+    <section class="trending">
+        <h2>Trending Now</h2>
+        <div class="trending-container">
+            <div class="product-card">
+                <img src="{{ url_for('static', filename='images/shirt.jpg') }}" alt="Shirt">
+                <p>Casual Shirt</p>
+            </div>
+            <div class="product-card">
+                <img src="{{ url_for('static', filename='images/dress.jpg') }}" alt="Dress">
+                <p>Elegant Dress</p>
+            </div>
+            <div class="product-card">
+                <img src="{{ url_for('static', filename='images/hoodie.jpg') }}" alt="Hoodie">
+                <p>Cool Hoodie</p>
+            </div>
+        </div>
+    </section>
+    <p>
+
+
+    
+    
+    </p>
+    <h2>ONLINE SHOPPING MADE EASY AT VIRTUAL TRY-ON</h2>
+    <p>If you would like to experience the best of online shopping for men, women, and kids in India, you are at the right place. Virtual try-on is the ultimate destination for fashion and lifestyle, being host to a wide array of merchandise including clothing, footwear, accessories, jewellery, personal care products, and more. It is time to redefine your style statement with our treasure-trove of trendy items. Our online store brings you the latest in designer products straight out of fashion houses. You can shop online at Virtual try-on from the comfort of your home and get your favourites delivered right to your doorstep.</p>
+    <h3>BEST ONLINE SHOPPING SITE IN WORLD FOR FASHION</h3> 
+    <p>Be it clothing, footwear, or accessories, Virtual try-on offers you the ideal combination of fashion and functionality for men, women, and kids. You will realise that the sky is the limit when it comes to the types of outfits that you can purchase for different occasions.</p>
+    <h4>1. Smart Men’s Clothing</h4>
+    <p>At Virtual try-on you will find myriad options in smart formal shirts and trousers, cool T-shirts and jeans, or kurta and pyjama combinations for men. Wear your attitude with printed T-shirts. Create the back-to-campus vibe with varsity T-shirts and distressed jeans. Be it gingham, buffalo, or window-pane style, checked shirts are unbeatably smart. Team them up with chinos, cuffed jeans, or cropped trousers for a smart casual look. Option for a stylish layered look with biker jackets. Head out in cloudy weather with courage in water-resistant jackets. Browse through our innerwear section to find supportive garments which would keep you confident in any outfit.</p> 
+    <h4>2. Trendy Women’s Clothing</h4> 
+    <p>Online shopping for women at Virtual try-on is a mood-elevating experience. Look hip and stay comfortable with chinos and printed shorts this summer. Look hot on your date dressed in a little black dress, or opt for red dresses for a sassy vibe. Striped dresses and T-shirts represent the classic spirit of nautical fashion. Choose your favourites from among Bardot, off-shoulder, shirt-style, blouson, embroidered, and peplum tops, to name a few. Team them up with skinny-fit jeans, skirts, or palazzos. Kurtis and jeans make the perfect fusion-wear combination for the cool urbanite. Our grand sarees and lehenga-choli selections are perfect to make an impression at big social events such as weddings. Our salwar-kameez sets, kurtas, and Patiala suits make comfortable options for regular wear.</p>
+    <h4>3. Fashionable Footwear</h4> 
+    <p>While clothes maketh the man, the type of footwear you wear reflects your personality. We bring you an exhaustive lineup of options in casual shoes for men, such as sneakers and loafers. Make a power statement at work dressed in brogues and oxfords. Practice for your marathon with running shoes for men and women. Choose shoes for individual games such as tennis, football, basketball, and the like. Or step into the casual style and comfort offered by sandals, sliders, and flip-flops. Explore our lineup of fashionable footwear for ladies, including pumps, heeled boots, wedge-heels, and pencil-heels. Or enjoy the best of comfort and style with embellished and metallic flats.</p> 
+    <h4>4. Stylish Accessories</h4> 
+    <p>Virtual try-on is one of the best online shopping sites for classy accessories that perfectly complement your outfits. You can select smart analogue or digital watches and match them up with belts and ties. Pick up spacious bags, backpacks, and wallets to store your essentials in style. Whether you prefer minimal jewellery or grand and sparkling pieces, our online jewellery collection offers you many impressive options.</p> 
+    <h4>5. Fun and Frolic</h4>
+    <p>Online shopping for kids at Virtual try-on is a complete joy. Your little princess is going to love the wide variety of pretty dresses, ballerina shoes, headbands, and clips. Delight your son by picking up sports shoes, superhero T-shirts, football jerseys, and much more from our online store. Check out our lineup of toys with which you can create memories to cherish.</p> 
+    <h4>6. Beauty Begins Here</h4>
+    <p>You can also refresh, rejuvenate, and reveal beautiful skin with personal care, beauty, and grooming products from Virtual try-on. Our soaps, shower gels, skin care creams, lotions, and other ayurvedic products are specially formulated to reduce the effect of aging and offer the ideal cleansing experience. Keep your scalp clean and your hair uber-stylish with shampoos and hair care products. Choose makeup to enhance your natural beauty.</p>
+    <h3>VIRTUAL TRY-ON INSIDER</h3> 
+    <p>Every online shopping experience is precious. Hence, a cashless reward-based customer loyalty program called Virtual try-on Insider was introduced to enhance your online experience. The program is applicable to every registered customer and measures rewards in the form of Insider Points.</p> 
+    <h4>Insider</h4>
+    <ul> <li>Opportunity to master any domain in fashion with tips from celebrity stylists at Virtual try-on Masterclass sessions.
+    </li> <li>Curated collections from celeb stylists.</li>
+    </ul>
+    <h4>Elite</h4> 
+    <ul> <li>VIP access to special sale events such as the End of Reason Sale (EORS) and product launches.</li> 
+    <li>Exclusive early access to Limited Edition products.</li> </ul>
+    <h4>Icon</h4>
+    <ul> <li>Chance to get on guest lists for special events.</li> </ul> 
+    <h3>Virtual Try-On Studio - The Personalised Fashion Feed You Wouldn’t Want To Miss Out On</h3> 
+    <p>The world wide web is evolving at a relentless pace, and with an accelerated growth each passing year, there is bound to be an overwhelming surge of online content. It was for this very reason that personalisation of search feeds was proposed as a solution to combat the overload of irrelevant information.</p> 
+    <p>Several social media platforms such as Facebook and Instagram along with various online shopping websites have chosen to help filter content, increasing user engagement, retention, and customer loyalty. Virtual try-on is one such online shopping website that joins the list of platforms that help curate a personalised fashion feed. Named the Virtual try-on Studio, this personalised search feed brings you the latest men and women’s fashion trends, celebrity styles, branded content, and daily updates from your favourite fashion labels.</p> 
+    <h4>1. Keep Up With What Your Favourite Fashion Icons Are Upto</h4>
+    <p>The #OOTD, AKA outfit of the day hashtag trend has been a rage among fashion bloggers and stylists. The whole concept of building an outfit from scratch and showcasing it to a huge community of enthusiasts using the hashtag has helped individuals with understanding trends and making suitable for daily wear. Imagine if you could keep up with every piece of clothing and accessory worn by the fashion icons you look upto. From Sonam Kapoor to Hailey Baldwin Bieber, Virtual try-on Studio has a ‘Stories’ feature to help track celebrity fashion trends, exploring details such as their outfit of the day. This way, you would not ever miss out on the latest celebrity fashion trends, from all around the world.</p>
+    <h4>2. Quick Fashion Tip And Tricks</h4> 
+    <p>Whether it is draping a saree into a dhoti style, wearing the right lingerie under certain dresses or discovering multiple uses out of heavy ethnic wear, Virtual try-on Studio will help you acquire some unique and useful fashion hacks. Each hack is designed with the intention to help you get the best wear out of everything in your wardrobe.</p> 
+    <h4>3. Updates on What Is Trending and New Product Launches</h4> 
+    <p>Since fast fashion seems to be extremely hard to keep up with these days, a quick update on what is trending in accessories, clothing, and footwear would certainly be of great help. Virtual try-on Studio helps you stay connected to the most beloved and sought after brands such as Puma, Coverstory, The Label Life and so many more. Your feed keeps you updated with stories of what the brands are creating including clothing, footwear, and jewellery, along with their new seasonal collections.</p>
+    <h4>4. Explicit Step-By-Step Beauty Routines From Experts</h4>
+    <p>Just like fashion, the beauty community keeps on growing, and with brands such as Huda Beauty, MAC and the latest Kay Beauty by Katrina Kaif, are constantly coming up with mind-blowing products. Whether it is creating a no-makeup look, different winged eyeliners, do-it-yourself facial masks and other personal care beauty routines, Virtual try-on Studio is here for you.</p>
+    <h4>5. Celebrity Confessions And A Look Into Their Lives</h4> 
+    <p>A bonus feature that Virtual try-on Studio has in store for you is celebrity confessions and a peek into their lives. So, Virtual try-on helps you stay connected to your most beloved celebrities in a matter of clicks.</p> 
+    <h3>VIRTUAL TRY-ON APP</h3> 
+    <p>Virtual try-on will become the world’s no. 1 online fashion destination justifies its fashion relevance by bringing something new and chic to the table on the daily. Fashion trends seem to change at lightning speed, yet the Virtual try-on shopping app has managed to keep up without any hiccups. In addition, Virtual try-on has vowed to serve customers to the best of its ability by introducing its first-ever loyalty program, The Virtual try-on Insider. Gain access to priority delivery, early sales, lucrative deals and other special perks on all your shopping with the Virtual try-on app. Download the Virtual try-on app on your Android or IOS device today and experience shopping like never before!</p>
+    <h3>SHOP ONLINE AT VIRTUAL TRY-ON WITH COMPLETE CONVENIENCE</h3>
+    <p>Another reason why Virtual try-on is the best of all online stores is the complete convenience that it offers. You can view your favourite brands with price options for different products in one place. A user-friendly interface will guide you through your selection process. Comprehensive size charts, product information and high-resolution images help you make the best buying decisions. You also have the freedom to choose your payment options, be it card or cash-on-delivery. The 14-day returns policy gives you more power as a buyer. Additionally, the try-and-buy option for select products takes customer-friendliness to the next level.</p>
+    <p>Enjoy the hassle-free experience as you shop comfortably from your home or your workplace. You can also shop for your friends, family and loved-ones and avail our gift services for special occasions.</p>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Virtual Try-On. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+    
+
+    <script src="{{ url_for('static', filename='js/camera.js') }}"></script>
+
+</body>
+</html>

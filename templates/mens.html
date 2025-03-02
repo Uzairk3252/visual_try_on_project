@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Men's Clothing</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+        .clothing-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .clothing-item {
+            margin: 20px;
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            width: 200px;
+            height: 300px;
+            object-fit: cover;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+        }
+        .tryon-button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .tryon-button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <h1>Men's Clothing</h1>
+    <div class="clothing-container">
+        <div class="clothing-item">
+            <img src="{{ url_for('static', filename='dataset/mens/10.png') }}" alt="10.png">
+            <br>
+            <a href="{{ url_for('tryon', image='dataset/mens/10.png', category='mens') }}">
+                <button class="tryon-button">Try On</button>
+            </a>
+        </div>
+
+        <div class="clothing-item">
+            <img src="{{ url_for('static', filename='dataset/mens/1.png') }}" alt="1.png">
+            <br>
+            <a href="{{ url_for('tryon', image='dataset/mens/1.png', category='mens') }}">
+                <button class="tryon-button">Try On</button>
+            </a>
+        </div>
+
+        <div class="clothing-item">
+            <img src="{{ url_for('static', filename='dataset/mens/MEN-Shirts_Polos-id_00001184-03_4_full.png') }}" alt="Clothing Item">
+            <br>
+            <a href="{{ url_for('tryon', image='dataset/mens/MEN-Shirts_Polos-id_00001184-03_4_full.png', category='mens') }}">
+                <button class="tryon-button">Try On</button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
